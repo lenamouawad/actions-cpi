@@ -1,0 +1,7 @@
+name : kiera
+on : [push]
+jobs:
+  [MonPremierJob :
+      runs-on : ubuntu-latest
+      steps:
+          - run: echo "Salut!"]
