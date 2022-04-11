@@ -1,7 +1,7 @@
-name : kiera
+name : toto
 on : [push]
 jobs:
-  [MonPremierJob :
+  MonPremierJob :
       runs-on : ubuntu-latest
       steps:
-          - run: echo "Salut!"]
+          - run: echo "Salut!"
