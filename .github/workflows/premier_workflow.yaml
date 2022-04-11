@@ -2,18 +2,16 @@ name : toto
 on : [push]
 jobs:
   MonPremierJob :
-      runs-on : ubuntu-latest
-      steps:
-        - name : Recup du repository
-          uses : actions/checkout@v3
-          with:
-            ref : "refs/tags/1.0.0"
-        - name : Afficher le contenu de mon job
-          run: ls
-   Build :
-      needs : [MonPremierJob]
-      runs-on : ubuntu-latest
-      steps:
+    runs-on : ubuntu-latest
+    steps:
+     - name : Recup du repository
+        uses : actions/checkout@v3
+    - name : Afficher le contenu de mon job
+        run: ls
+  Build :
+    needs : [MonPremierJob]
+    runs-on : ubuntu-latest
+    steps:
       - name : build de lapp
         run : echo "je builkd"
         
