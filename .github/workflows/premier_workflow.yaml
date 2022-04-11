@@ -5,6 +5,6 @@ jobs:
       runs-on : ubuntu-latest
       steps:
           - name : Afficher salut en console
-          run: echo "Salut!"
+             run: echo "Salut!"
           - name : echo
-          run: echo "Totot!"
+            run: echo "Totot!"
