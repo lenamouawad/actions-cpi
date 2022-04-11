@@ -4,7 +4,7 @@ jobs:
   MonPremierJob :
       runs-on : ubuntu-latest
       steps:
-        - name : Afficher salut en console
-          run: echo "Salut!"
-        - name : echo
-          run: echo "Totot!"
+        - name : Recup du repo
+          uses : actions/checkout@v3
+        - name : Afficher le contenu de mon job
+          run: ls
